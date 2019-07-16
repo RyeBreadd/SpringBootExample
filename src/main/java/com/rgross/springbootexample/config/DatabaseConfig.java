@@ -17,13 +17,12 @@ public class DatabaseConfig {
     @Value("${spring.datasource.username}")
     private String username;
 
-    @Value("${spring.datasource.password")
+    @Value("${spring.datasource.password}")
     private String password;
 
     @Bean
     public DataSource dataSource() {
         HikariConfig config = new HikariConfig();
-        System.out.println(databaseUrl + " " + username + " " + password);
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         config.setJdbcUrl(databaseUrl);
         config.setUsername(username);
