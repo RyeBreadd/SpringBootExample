@@ -1,4 +1,4 @@
-package com.rgross.springbootexample;
+package com.rgross.springbootexample.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 @Configuration
 public class DatabaseConfig {
 
-    @Value("${spring.datasource.url")
+    @Value("${spring.datasource.url}")
     private String databaseUrl;
 
     @Value("${spring.datasource.username}")
