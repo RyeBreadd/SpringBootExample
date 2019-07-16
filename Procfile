@@ -1,1 +1,0 @@
-web java -Dserver.port=$PORT -Dspring.datasource.url=$SPRING_DATASOURCE_URL -Dspring.datasource.username=$SPRING_DATASOURCE_USERNAME -Dspring.datasource.password=$SPRING_DATASOURCE_PASSWORD $JAVA_OPTS -jar target/SpringBootExample-1.0.jar
