@@ -23,6 +23,7 @@ public class DatabaseConfig {
     @Bean
     public DataSource dataSource() {
         HikariConfig config = new HikariConfig();
+        System.out.println(databaseUrl + " " + username + " " + password);
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         config.setJdbcUrl(databaseUrl);
         config.setUsername(username);
